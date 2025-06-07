@@ -3,7 +3,7 @@ import asyncio
 from aiogram import Bot, Dispatcher
 from handlers.registation import add_workout
 from database import Database
-from aiogram.fsm.state import FSMContext
+from aiogram.fsm.context import FSMContext
 
 
 from config import TOKEN

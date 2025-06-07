@@ -38,11 +38,3 @@ async def weight_input(message: Message, state: FSMContext):
     await message.answer("Введите свой вес")
     await state.set_state(Registation.age)
 
-
-@router.message(StateFilter(Registation.succes))
-async def email_input(message: Message, state: FSMContext):
-    if VisitorTable.has_email(message.text) is True:
-        ...
-    else:
-        ...
-     
